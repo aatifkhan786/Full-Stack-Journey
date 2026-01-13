@@ -1,0 +1,140 @@
+# First Web Page – Printing Hello World
+
+---
+
+## Introduction
+
+### English:
+
+So far, we have already learned about the structure of an HTML document, basic tags, and how HTML works. Now, using this knowledge, we will create our **first simple web page**. This page will display the text **"Hello World"**, which is the traditional starting point in programming.
+
+### Hinglish:
+
+Ab tak hum HTML document ka structure aur basic tags samajh chuke hain. Ab isi knowledge ka use karke hum apna **pehla web page** banayenge jo **"Hello World"** display karega. Ye programming aur web development ka first step mana jata hai.
+
+---
+
+## Why Start with "Hello World"?
+
+### English:
+
+"Hello World" is usually the first program written when learning any programming language. It helps beginners understand how code is written, how it runs, and how output appears on the screen.
+
+### Hinglish:
+
+"Hello World" almost har programming language ka first program hota hai. Isse beginner ko ye samajh aata hai ki code ka structure kya hota hai aur output screen par kaise dikhta hai.
+
+---
+
+## Steps to Create Your First "Hello World" Web Page
+
+### Step 1: Open a Text Editor
+
+### English:
+
+To create an HTML file, you need a text editor. You can use:
+
+* Notepad (Windows)
+* TextEdit (Mac)
+* Code editors like VS Code, Sublime Text, or Atom
+
+### Hinglish:
+
+HTML likhne ke liye ek text editor chahiye hota hai, jaise:
+
+* Notepad (Windows)
+* TextEdit (Mac)
+* VS Code, Sublime Text ya Atom jaise code editors
+
+---
+
+### Step 2: Write the HTML Code
+
+Create a new file named **index.html** and write the following code:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>First Web Page</title>
+</head>
+<body>
+    Hello World!
+</body>
+</html>
+```
+
+---
+
+## Explanation of the Code
+
+### English:
+
+* `<!DOCTYPE html>` tells the browser that this is an HTML5 document.
+* `<html>` is the root element that contains the entire webpage.
+* `<head>` contains metadata about the page.
+* `<title>` sets the title shown in the browser tab.
+* `<body>` contains the content that appears on the webpage.
+
+### Hinglish:
+
+* `<!DOCTYPE html>` browser ko batata hai ki ye HTML5 document hai.
+* `<html>` poore webpage ka main (root) tag hota hai.
+* `<head>` me page ki extra information hoti hai.
+* `<title>` browser tab me dikhne wala naam set karta hai.
+* `<body>` ka content webpage par visible hota hai.
+
+---
+
+## Heading Tags in HTML
+
+### English:
+
+HTML provides six different heading tags: `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, and `<h6>`. `<h1>` is the most important and largest heading, while `<h6>` is the least important and smallest.
+
+### Hinglish:
+
+HTML me 6 heading tags hote hain: `<h1>` se `<h6>` tak. `<h1>` sabse bada aur important hota hai, jabki `<h6>` sabse chhota aur least important hota hai.
+
+---
+
+## Example: Printing Hello World Using Heading Tags
+
+```html
+<html>
+<body>
+    <h1>Hello World!</h1>
+    <h2>Hello World!</h2>
+    <h3>Hello World!</h3>
+    <h4>Hello World!</h4>
+    <h5>Hello World!</h5>
+    <h6>Hello World!</h6>
+</body>
+</html>
+```
+
+---
+
+## Output Explanation
+
+### English:
+
+The same text **"Hello World!"** is displayed in six different sizes. The `<h1>` heading appears the largest and boldest, while `<h6>` appears the smallest.
+
+### Hinglish:
+
+Yahan **"Hello World!"** ek hi text 6 alag-alag size me show hota hai. `<h1>` sabse bada aur bold hota hai, jabki `<h6>` sabse chhota hota hai.
+
+---
+
+## Key Points (Exam / Viva Ready)
+
+* "Hello World" pehla HTML program hota hai
+* `<!DOCTYPE html>` HTML5 document define karta hai
+* `<body>` ka content webpage par dikhai deta hai
+* Heading tags content ko structured aur readable banate hain
+* `<h1>` SEO aur page structure ke liye sabse important hota hai
+
+---
+
+### ✅ This file is fully ready for notes, exam revision, and viva preparation.

@@ -1,0 +1,159 @@
+# HTML Tables – Zero to Master Complete Hinglish Notes (Kabhi Na Bhoolne Wale)
+---
+## 1. HTML Table kya hoti hai? (Bilkul zero se samjho)
+Socho tumhare paas ek **school register** ya **Excel sheet** hai jisme rows aur columns hote hain. HTML table bhi bilkul waise hi hoti hai. HTML tables ka use **data ko rows aur columns ke form me show karne** ke liye hota hai, jaise students ka record, timetable, marksheet, product list, etc.
+HTML table ka kaam **layout banana nahi**, balki **data organize karna** hota hai.
+---
+## 2. HTML Table ka basic structure (yeh dimag me fix kar lo)
+HTML table banane ke liye 4 basic tags hote hain:
+* `<table>` → poori table ka box
+* `<tr>` → table ki ek row
+* `<th>` → table ka heading cell
+* `<td>` → table ka data cell
+### Yaad rakhne ki trick 🧠
+* table = dabba
+* tr = row (horizontal line)
+* th = heading (bold + center by default)
+* td = data (normal text)
+---
+## 3. Sabse simple HTML Table (foundation example)
+```html
+<table>
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Priya</td>
+        <td>Sharma</td>
+        <td>24</td>
+    </tr>
+</table>
+```
+### Isko kaise samjho?
+Pehli `<tr>` ne column ke naam set kiye. Uske baad wali har `<tr>` ek person ka data represent karti hai.
+---
+## 4. Table ka poora structure kaise sochna hai (mental model)
+HTML table ko hamesha aise imagine karo:
+```
+TABLE
+ ├── ROW (tr)
+ │    ├── CELL (th / td)
+ │    ├── CELL (th / td)
+ ├── ROW (tr)
+ │    ├── CELL (td)
+ │    ├── CELL (td)
+```
+Agar ye model clear ho gaya, to table kabhi confuse nahi karegi.
+---
+## 5. Important HTML Table Tags (Exam + Practical)
+* `<table>` → table banata hai
+* `<tr>` → row banata hai
+* `<th>` → heading cell
+* `<td>` → data cell
+* `<caption>` → table ka title
+* `<thead>` → header group
+* `<tbody>` → main data group
+* `<tfoot>` → footer group
+* `<col>` / `<colgroup>` → column styling
+---
+## 6. Table Styling – CSS ke saath (yahin se table samajh aati hai)
+### (a) Border add karna
+```css
+table, th, td {
+  border: 1px solid black;
+}
+```
+Agar border nahi doge to table invisible lagegi.
+---
+### (b) Border collapse (MOST IMPORTANT)
+```css
+table {
+  border-collapse: collapse;
+}
+```
+Isse double borders single line me aa jaate hain.
+---
+### (c) Cell padding (andar ki space)
+```css
+th, td {
+  padding: 20px;
+}
+```
+Padding = text aur border ke beech ka gap.
+---
+### (d) Heading alignment
+```css
+th {
+  text-align: left;
+}
+```
+By default headings center hoti hain.
+---
+### (e) Border spacing (cells ke beech ka gap)
+```css
+table {
+  border-spacing: 5px;
+}
+```
+⚠️ Border-spacing tab kaam karta hai jab border-collapse off ho.
+---
+## 7. colspan – column merge karna (yeh kabhi mat bhoolna)
+```html
+<th colspan="2">Telephone</th>
+```
+Iska matlab ek cell **2 columns ki jagah** le lega.
+### Yaad rakhne ka rule:
+colspan = columns merge
+---
+## 8. rowspan – row merge karna
+```html
+<th rowspan="2">Telephone</th>
+```
+Iska matlab ek cell **2 rows ki height** lega.
+### Yaad rakhne ka rule:
+rowspan = rows merge
+---
+## 9. Caption – table ka title
+```html
+<table>
+  <caption>DETAILS</caption>
+</table>
+```
+Caption hamesha `<table>` ke andar aur upar hota hai.
+---
+## 10. Background color table me kaise lagaye
+```css
+table {
+  background-color: #f2f2d1;
+}
+```
+Ya ID ke saath:
+```css
+table#t01 {
+  background-color: #f2f2d1;
+}
+```
+---
+## 11. Nested Tables (Table ke andar Table)
+Nested table ka matlab hota hai **ek table ke cell ke andar doosri table**.
+⚠️ Real projects me kam use karo, kyunki structure complex ho jaata hai.
+---
+## 12. Sabse common mistakes (exam + practical dono ke liye)
+* `<tr>` ke andar sirf `<th>` ya `<td>` aata hai
+* colspan / rowspan galat count karna
+* border-collapse bhool jaana
+* tables ka use layout ke liye karna (❌)
+---
+## 13. Common Questions (Isko alag section me yaad rakho)
+* Table me body group karne ke liye `<tbody>`
+* Table ke footer ke liye `<tfoot>`
+* Cell merge karne ke liye colspan / rowspan
+* Cell padding vs spacing
+* Layout ke liye tables kyun avoid karte hain
+---
+## 14. Final Master Summary (Kabhi na bhoolne wali)
+HTML table ek grid hoti hai jo rows aur columns se milkar banti hai. `<table>` poori table ko define karta hai, `<tr>` row banata hai, `<th>` heading ke liye hota hai aur `<td>` data ke liye. Styling CSS se hoti hai jaise border, padding aur alignment. colspan columns merge karta hai aur rowspan rows merge karta hai. Tables ka use data display ke liye hota hai, layout ke liye nahi.
+---
+

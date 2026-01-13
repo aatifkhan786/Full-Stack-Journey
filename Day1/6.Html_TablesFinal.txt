@@ -1,0 +1,206 @@
+# HTML Tables – ALL Common Questions
+## Question 1: How do you group the body content in a table using HTML5?
+### ✅ Answer (Concept):
+HTML5 me table ke **main data (body content)** ko group karne ke liye `<tbody>` tag use hota hai. Isse browser aur developers dono ko clear hota hai ki table ka actual data kaunsa part hai.
+### 🧠 Kaam kya hota hai:
+* `<thead>` → headings ke liye
+* `<tbody>` → main data ke liye
+* `<tfoot>` → summary / footer ke liye
+### 💻 Implementation Code:
+```html
+<table border="1">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Aatif</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Amit</td>
+      <td>22</td>
+    </tr>
+  </tbody>
+</table>
+```
+---
+## Question 2: How can you create a table without using the <table> tag?
+### ✅ Answer (Concept):
+HTML `<table>` ke bina bhi table-jaisa layout banaya ja sakta hai by using **CSS Grid, Flexbox ya Bootstrap Grid**. Ye approach layout ke liye hoti hai, data ke liye nahi.
+### 🧠 Kaam kya hota hai:
+* Rows aur columns CSS se bante hain
+* HTML semantic table tags use nahi hote
+### 💻 Implementation (Bootstrap Grid Example):
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<div class="container">
+  <div class="row font-weight-bold border">
+    <div class="col">Name</div>
+    <div class="col">Age</div>
+  </div>
+  <div class="row border">
+    <div class="col">Aatif</div>
+    <div class="col">24</div>
+  </div>
+</div>
+```
+---
+## Question 3: What is the rule attribute in an HTML table?
+### ✅ Answer:
+`rules` attribute purane HTML versions me table ke **internal borders control** karta tha. HTML5 me ye **deprecated** hai.
+### 💻 Old (Deprecated) Code:
+```html
+<table rules="all" border="1">
+  <tr><td>A</td><td>B</td></tr>
+</table>
+```
+### ✅ Modern Replacement:
+```css
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+```
+---
+## Question 4: Why should we avoid tables for layout in HTML?
+### ✅ Answer:
+Tables layout ke liye avoid ki jati hain kyunki:
+* Responsive nahi hoti
+* SEO aur accessibility weak hoti hai
+* Code complex ho jata hai
+### ✅ Correct Practice (Layout via CSS):
+```html
+<div style="display:flex;">
+  <div style="width:50%;">Left</div>
+  <div style="width:50%;">Right</div>
+</div>
+```
+---
+## Question 5: How do I fix the height of rows in a table?
+### ✅ Answer:
+CSS `height` property se table row ya cell ki height fix hoti hai.
+### 💻 Code:
+```html
+<tr style="height:60px;">
+  <td>Data</td>
+  <td>Data</td>
+</tr>
+```
+---
+## Question 6: How do you set the number of rows a table cell should span?
+### ✅ Answer:
+`rowspan` attribute use hota hai.
+### 💻 Code:
+```html
+<td rowspan="2">Phone</td>
+```
+---
+## Question 7: How do you set a fixed width for <td> in a table?
+### ✅ Answer:
+CSS `width` property ka use hota hai.
+### 💻 Code:
+```html
+<td style="width:150px;">Name</td>
+```
+---
+## Question 8: How do you merge table cells in HTML?
+### ✅ Answer:
+* Columns merge → `colspan`
+* Rows merge → `rowspan`
+### 💻 Code:
+```html
+<td colspan="2">Merged Cell</td>
+```
+---
+## Question 9: How to create a Time-Table Schedule using HTML?
+### 💻 Implementation:
+```html
+<table border="1">
+<tr><th>Day</th><th>9-10</th><th>10-11</th></tr>
+<tr><td>Mon</td><td>Math</td><td>Science</td></tr>
+</table>
+```
+---
+## Question 10: How to fetch data from JSON and display in HTML table?
+### ✅ Answer:
+JavaScript se JSON read karke dynamically table rows banai jati hain.
+### 💻 Code:
+```html
+<script>
+const data = [
+ {name:'Aatif', age:24},
+ {name:'Amit', age:22}
+];
+data.forEach(d => {
+  document.write(`<tr><td>${d.name}</td><td>${d.age}</td></tr>`);
+});
+</script>
+```
+---
+## Question 11: How to perform real-time search & filter on HTML table?
+### 💻 Code:
+```html
+<input onkeyup="filter()">
+<script>
+function filter(){ /* logic */ }
+</script>
+```
+---
+## Question 12: How to use header & footer in HTML table?
+### 💻 Code:
+```html
+<table border="1">
+<thead><tr><th>Item</th></tr></thead>
+<tbody><tr><td>Pen</td></tr></tbody>
+<tfoot><tr><td>Total</td></tr></tfoot>
+</table>
+```
+---
+## Question 13: How do you apply borders inside a table?
+### 💻 Code:
+```css
+table, th, td {
+ border:1px solid black;
+ border-collapse: collapse;
+}
+```
+---
+## Question 14: What are Cell Padding & Cell Spacing?
+### 💻 Code:
+```css
+th,td{padding:10px;} table{border-spacing:5px;}
+```
+---
+## Question 15: Can I add multiple <tbody> in the same table?
+### ✅ Answer:
+Yes, HTML5 allow karta hai.
+### 💻 Code:
+```html
+<table border="1">
+<tbody><tr><td>A</td></tr></tbody>
+<tbody><tr><td>B</td></tr></tbody>
+</table>
+```
+---
+## Question 16: How to add table footer in HTML?
+### 💻 Code:
+```html
+<tfoot><tr><td>End</td></tr></tfoot>
+```
+---
+## Question 17: What HTML tags are used to display data in tabular form?
+### ✅ Answer:
+`<table>`, `<tr>`, `<th>`, `<td>`
+---
+## Question 18: How can we add a tooltip to a table cell without JavaScript?
+### 💻 Code:
+```html
+<td title="User Name">Aatif</td>
+```
+---
+## FINAL MASTER SUMMARY (EXAM GOLD)
+HTML tables data ko rows aur columns me dikhane ke liye use hoti hain. `<thead>`, `<tbody>`, `<tfoot>` se content group hota hai. Styling CSS se hoti hai. Layout ke liye tables avoid ki jati hain aur CSS Grid/Flexbox use hota hai. `colspan` aur `rowspan` se cells merge kiye jate hain.

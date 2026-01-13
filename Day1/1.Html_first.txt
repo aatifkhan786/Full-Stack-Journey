@@ -1,0 +1,219 @@
+# HTML5 – Complete Notes (English + Hinglish)
+
+---
+
+## 1. What is HTML5?
+
+### English:
+
+HTML5 is the fifth and latest major version of HyperText Markup Language. It is used to structure and present content on the web. HTML5 is designed to support modern websites, multimedia, and mobile devices efficiently.
+
+### Hinglish:
+
+HTML5, HyperText Markup Language ka fifth aur latest version hai. Iska use web pages ka structure banane aur content dikhane ke liye hota hai. HTML5 modern websites, multimedia aur mobile devices ko dhyaan me rakh kar banaya gaya hai.
+
+---
+
+## 2. Key Features of HTML5
+
+### 2.1 Multimedia Support
+
+**English:**
+HTML5 allows embedding audio and video directly into web pages without using external plugins like Flash.
+
+**Hinglish:**
+HTML5 me bina kisi plugin (jaise Flash) ke directly audio aur video add kar sakte hain.
+
+---
+
+### 2.2 New Form Controls
+
+**English:**
+HTML5 introduces new input types such as email, date, number, etc., which provide better validation and user experience.
+
+**Hinglish:**
+HTML5 me naye input types aaye jaise email, date, number, jisse form validation automatic ho jata hai aur user experience better hota hai.
+
+---
+
+### 2.3 Web Storage (Offline Data)
+
+**English:**
+HTML5 provides Web Storage APIs like localStorage and sessionStorage to store data in the browser for offline use.
+
+**Hinglish:**
+HTML5 Web Storage deta hai jaise localStorage aur sessionStorage jisme data browser me save hota hai aur offline bhi use ho sakta hai.
+
+---
+
+### 2.4 Semantic Elements
+
+**English:**
+Semantic elements clearly define the meaning of content, making code more readable and SEO friendly.
+
+**Hinglish:**
+Semantic tags ka matlab hota hai ki tag apna meaning batata hai, jisse code readable hota hai aur SEO improve hota hai.
+
+---
+
+### 2.5 Better Performance
+
+**English:**
+HTML5 improves performance, especially on mobile devices, by reducing dependency on plugins.
+
+**Hinglish:**
+HTML5 mobile devices par fast kaam karta hai kyunki plugins par depend nahi karta.
+
+---
+
+## 3. Basic HTML5 Page Structure
+
+### Example Code:
+
+```html
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Page</title>
+</head>
+<body>
+    <header>
+        <h1>Hello, World!</h1>
+    </header>
+    <main>
+        <p>This is a simple HTML5 page.</p>
+    </main>
+    <footer>
+        <p>All rights reserved</p>
+    </footer>
+</body>
+</html>
+```
+
+### Explanation:
+
+**English:**
+
+* `<html>` is the root element.
+* `<head>` contains metadata.
+* `<meta charset>` defines character encoding.
+* `<header>`, `<main>`, `<footer>` define page structure.
+
+**Hinglish:**
+
+* `<html>` poore page ka root hota hai.
+* `<head>` me page ki information hoti hai.
+* `<meta charset>` characters support ke liye hota hai.
+* `<header>`, `<main>`, `<footer>` page ka structure batate hain.
+
+---
+
+## 4. New Elements in HTML5
+
+### Structural Tags
+
+**English + Hinglish:**
+
+* `<article>` – Independent content (alag article/post)
+* `<section>` – Related content ka group
+* `<aside>` – Side information
+* `<nav>` – Navigation links
+* `<header>` – Intro content
+* `<footer>` – Ending info
+* `<main>` – Main content
+
+---
+
+### Media Tags
+
+**English + Hinglish:**
+
+* `<audio>` – Audio play karne ke liye
+* `<video>` – Video play karne ke liye
+* `<canvas>` – JavaScript se drawing ke liye
+* `<svg>` – Vector graphics ke liye
+
+---
+
+## 5. Deprecated Elements in HTML5
+
+### English:
+
+Some old tags are removed in HTML5 and replaced with CSS or new tags.
+
+### Hinglish:
+
+HTML5 me kuch purane tags hata diye gaye hain aur unki jagah CSS ya naye tags use hote hain.
+
+Examples:
+
+* `<font>` ❌ → CSS ✅
+* `<center>` ❌ → CSS ✅
+* `<strike>` ❌ → `<del>` / CSS
+
+---
+
+## 6. Advantages of HTML5
+
+**English:**
+
+* Cross-platform support
+* Mobile friendly
+* Offline storage
+* Better SEO
+
+**Hinglish:**
+
+* Har browser me kaam karta hai
+* Mobile friendly hai
+* Offline data store kar sakte hain
+* SEO improve hota hai
+
+---
+
+## 7. Disadvantages of HTML5
+
+**English:**
+
+* Old browsers support nahi karte
+* Beginners ke liye thoda complex
+
+**Hinglish:**
+
+* Purane browsers me kaam nahi karta
+* Beginners ko thoda difficult lag sakta hai
+
+---
+
+## 8. HTML5 Examples
+
+### Video Example
+```html
+<video controls>
+    <source src="movie.mp4" type="video/mp4">
+</video>
+**English:** Used to embed video.
+**Hinglish:** Video add karne ke liye.
+
+### Canvas Example
+```html
+<canvas id="myCanvas" width="100" height="100"></canvas>
+**English:** Used for drawing graphics.
+**Hinglish:** Graphics draw karne ke liye.
+
+### Progress Example
+```html
+<progress value="70" max="100"></progress>
+**English:** Shows task progress.
+**Hinglish:** Kaam ki progress dikhata hai.
+## 9. Best Practices
+**English:**
+* Use semantic tags
+* Ensure mobile responsiveness
+* Write clean code
+**Hinglish:**
+* Semantic tags use karo
+* Mobile friendly design rakho
+* Clean aur readable code likho
+

@@ -1,0 +1,94 @@
+# HTML Basics – Complete Hinglish Notes (Deep + Easy to Remember)
+---
+## 1. HTML kya hota hai?
+HTML ka full form **HyperText Markup Language** hota hai. HTML ek **standard markup language** hai jo web pages banane aur unka structure decide karne ke kaam aati hai.
+Simple shabdon me samjho to HTML website ka **skeleton** hota hai. Jaise insaan ke body ka structure bones se banta hai, waise hi website ka structure HTML se banta hai. HTML ye decide karta hai ki page par text kaha hoga, image kaha hogi, heading kaisi hogi, aur content ka order kya hoga.
+Aaj ke time me 95% se zyada websites HTML ka use karti hain, isliye HTML web development ka foundation mana jaata hai.
+---
+## 2. HTML Basic Document aur Structure
+Har HTML document ki shuruaat ek **DOCTYPE declaration** se hoti hai. Ye browser ko batata hai ki document ko kaise render karna hai. Uske baad `<html>` tag aata hai jo poore page ka root element hota hai.
+HTML document mainly do parts me divided hota hai:
+* `<head>` section
+* `<body>` section
+Ye structure webpage ko logically organize karta hai.
+---
+## 3. Basic HTML Tags (Document Structure)
+### `<html>` tag
+Ye poore HTML document ko wrap karta hai. Browser ko ye pata chalta hai ki ye ek HTML page hai.
+### `<head>` tag
+Isme webpage ki **information** hoti hai, jaise title, meta tags, aur CSS links. Ye content webpage par directly show nahi hota.
+### `<title>` tag
+Ye `<head>` ke andar hota hai aur browser tab me dikhne wala page ka naam set karta hai.
+### `<body>` tag
+Ye webpage ka sabse important part hota hai. Jo kuch bhi user ko screen par dikhta hai — text, image, video, link — sab `<body>` ke andar hota hai.
+---
+## 4. Basic HTML Document ka Example
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body>
+    <p>GeeksforGeeks is an online study platform</p>
+</body>
+</html>
+```
+### Code Explanation (Hinglish)
+Is code me `<!DOCTYPE html>` browser ko batata hai ki HTML5 standards follow karne hain. `<meta>` tags page ko responsive banate hain taaki mobile aur desktop dono me sahi dikhe. `<p>` tag ek paragraph show karta hai jo webpage par visible hota hai.
+---
+## 5. HTML Headings
+HTML me headings banane ke liye `<h1>` se `<h6>` tak tags use hote hain. `<h1>` sabse important aur largest heading hoti hai, jabki `<h6>` sabse chhoti.
+Headings ka use content ko **hierarchy** aur **structure** dene ke liye hota hai. Search engines bhi headings ko importance dete hain.
+```html
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+```
+---
+## 6. HTML Paragraph aur Break Tags
+### Paragraph `<p>` tag
+`<p>` tag ka use paragraph likhne ke liye hota hai. Har paragraph new line se start hota hai.
+### Break `<br>` tag
+`<br>` ek empty tag hota hai jo sirf **line break** ke liye use hota hai. Iska closing tag nahi hota.
+```html
+<p>
+HTML ek markup language hai.<br>
+Ye web pages banane ke kaam aati hai.
+</p>
+```
+---
+## 7. HTML Horizontal Line `<hr>`
+`<hr>` tag webpage par ek horizontal line draw karta hai jo content ko visually divide karta hai. Ye bhi ek empty tag hota hai.
+Iska use sections ke beech separation dikhane ke liye hota hai.
+---
+## 8. HTML Comments
+HTML comments browser me show nahi hote. Ye developer ke liye hote hain taaki code samajhna easy ho.
+Single-line aur multi-line comments dono possible hote hain.
+```html
+<!-- Ye ek comment hai -->
+```
+Comments ka use explanation dene, debugging aur future reference ke liye hota hai.
+---
+## 9. HTML Images
+Images add karne ke liye `<img>` tag use hota hai. Ye ek empty tag hota hai.
+```html
+<img src="geeks.png">
+```
+`src` attribute image ka path ya URL batata hai jahan se image load hogi.
+---
+## 10. HTML Source Code kaise dekhein?
+Kisi bhi webpage ka HTML dekhne ke liye:
+* **Ctrl + U** press karo → poora page source
+* Right click → **Inspect** → kisi specific element ka HTML aur CSS
+Inspect tool se tum live changes bhi dekh sakte ho.
+---
+## 11. Conclusion (Kabhi na bhoolne wali summary)
+HTML web development ka first aur sabse important step hai. Ye webpage ka structure define karta hai aur content ko organize karta hai. Headings, paragraphs, images, comments aur document structure milkar ek complete webpage banate hain. HTML jitna zyada practice karoge, utna hi tum web development me strong hote jaoge.
+---
+### ✅ Ye notes exam, viva, revision aur real-world practice ke liye 100% ready hain.

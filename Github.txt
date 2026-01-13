@@ -81,7 +81,7 @@ Commit se pehle files ko stage karna zaroori hota hai.
 🧩 Commit Area (git commit)
 Definition:
 A commit permanently saves the staged changes into the Git repository along with a descriptive message.
-git commit -m "Initial commit"
+git commit -m "Initial commit" Note=> if you forget to write -m in terminal then Git opens a text editor to enter the commit message
 📌 Example (Hinglish):
 Commit lena matlab project ka photo kheench lena aur us par ek message likh dena taaki baad me yaad rahe kya change hua tha.
 🧠 Commit = Snapshot + Message
@@ -182,6 +182,10 @@ git checkout branch-name
 → Jab tum kisi aur branch par kaam karna chahte ho
 git checkout <commit-hash>
 → Jab tum project ka koi purana version dekhna chahte ho
+
+👉 New branch create karke usi me switch karne ke liye command hoti hai:
+git checkout -b branch_name
+
 📌 Example (Hinglish):
 Agar tum abhi main branch par ho aur feature-branch par kaam karna chahte ho, to checkout se branch change karte ho.
 Aur agar tum dekhna chahte ho ki project pehle kaisa tha, to us commit par checkout kar sakte ho.
@@ -268,6 +272,15 @@ git branch -M main
 # Repo bilkul empty honi chahiye
 # =========================================
 # STEP 8: REMOTE REPOSITORY ADD KARO
+Socho tum apne laptop par code likh rahe ho. Ye tumhari local repository hai. Yahan tum code likhte ho, git add aur git commit karte ho, lekin ye sab sirf tumhare computer tak hi limited hota hai. Agar laptop kharab ho jaaye ya tum kisi aur system se kaam karna chaho, to code ka access mushkil ho jaata hai. Isi problem ko solve karne ke liye Git Remote Repository use hoti hai.
+
+Remote repository ek online jagah hoti hai (jaise GitHub) jahan hum apna code safe rakhte hain, backup lete hain aur share karte hain. Jab hum GitHub par repo bana kar use apne project se connect karte hain, to hum command use karte hain
+git remote add origin <repo-url>
+Yahan origin remote repository ka naam hota hai. Iska matlab hota hai ki hum apne local project ko ek online repo ke saath link kar rahe hain.
+
+Ab hume ye confirm karna hota hai ki remote sahi se add hui ya nahi. Iske liye hum
+git remote -v
+use karte hain. Ye command hume dikhati hai ki kaunsi remote repository connected hai aur uska URL kya hai (fetch aur push dono ke liye).
 # =========================================
 git remote add origin https://github.com/username/repository-name.git
 # =========================================
