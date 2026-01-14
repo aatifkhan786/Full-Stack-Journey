@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Survey</title>
+  </head>
+  <body>
+    <h1>Customer Feedback Survey</h1>
+    <p>Please take a moment to complete the survey below</p>
+    <form>
+      <label for="username">Your Name</label>
+      <input type="text" id="username" name="username" required />
+      <br />
+      <label for="password">Your Password: </label>
+      <input type="password" id="password" name="password" required />
+      <br />
+      <label for="age">Your Age:</label>
+      <input type="number" id="age" name="age" required /><br /><br />
+      <label for="color">Fvourite color</label>
+      <select id="color" name="color">
+        <option value="red">Red</option>
+        <option value="Blue">Blue</option>
+        <option value="Yellow">Yellow</option>
+        <option value="Green">Green</option>
+        <option value="Black">Black</option>
+        <option value="Brown">Brown</option>
+        <option value="Purple">Purple</option>
+      </select>
+      <br />
+      <label for="feedback">Your Feedback</label>
+      <textarea
+        id="feedback"
+        name="feedback"
+        rows="4"
+        cols="50"
+        required
+      ></textarea
+      ><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <h3>Instructions:</h3>
+    <ul>
+      <li>Fill in your name and age in the first two fields.</li>
+      <li>Select your favorite color from the dropdown list.</li>
+      <li>Provide your feedback in the text box below.</li>
+      <li>Click the "Submit" button to submit your responses.</li>
+    </ul>
+    <h2>Survey Responses</h2>
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Favourite Color</th>
+        <th>Feedback</th>
+      </tr>
+      <tr>
+        <td>Alice</td>
+        <td>30</td>
+        <td>Red</td>
+        <td>Great Service keep it up</td>
+      </tr>
+      <tr>
+        <td>Bob</td>
+        <td>25</td>
+        <td>Green</td>
+        <td>Would love to see more options.</td>
+      </tr>
+    </table>
+  </body>
+</html>
