@@ -1,0 +1,159 @@
+📘 HTML Block and Inline Elements – Complete Notes (Single File)
+🔹 What are HTML Elements?
+HTML elements are the building blocks of a webpage.
+Each element tells the browser how content should be displayed.
+👉 HTML elements are mainly divided into two types:
+Block-level Elements
+Inline Elements
+🔹 Difference Between Block & Inline Elements
+Feature	Block Elements	Inline Elements
+New Line	Always starts on a new line	Does NOT start on a new line
+Width	Takes full available width	Takes only required width
+Layout	Used for structure/layout	Used inside content
+Example	<div>, <p>, <section>	<span>, <a>, <b>
+🧱 BLOCK-LEVEL ELEMENTS
+🔸 Definition
+A block-level element:
+Always starts on a new line
+Occupies full width of parent
+Height depends on content
+📌 Use case:
+Page layout, sections, grouping content
+🔹 Common Block-Level Elements (Explained)
+1️⃣ <div> – Division Element
+📌 Use: Container for grouping elements
+📌 Why: Styling, layout, structure
+Syntax
+<div>Content</div>
+Example
+<div style="border:1px solid black;">
+  <h1>GeeksforGeeks</h1>
+  <p>Learning platform for programmers</p>
+</div>
+🧠 Hinglish:
+<div> ek box hota hai jo dusre elements ko group karta hai.
+2️⃣ <p> – Paragraph
+📌 Use: Text paragraph
+<p>This is a paragraph.</p>
+3️⃣ <h1> to <h6> – Headings
+📌 Use: Titles & headings
+📌 <h1> biggest, <h6> smallest
+<h1>Main Heading</h1>
+<h3>Sub Heading</h3>
+4️⃣ <section>
+📌 Use: Group related content
+📌 SEO friendly
+<section>
+  <h2>About Us</h2>
+  <p>We are developers.</p>
+</section>
+5️⃣ <article>
+📌 Use: Independent content (blog, post)
+<article>
+  <h2>HTML Basics</h2>
+  <p>This is an article.</p>
+</article>
+6️⃣ <header>
+📌 Use: Top section (logo, nav, heading)
+<header>
+  <h1>Website Title</h1>
+</header>
+7️⃣ <footer>
+📌 Use: Bottom section (copyright)
+<footer>
+  <p>© 2026 All rights reserved</p>
+</footer>
+8️⃣ <nav>
+📌 Use: Navigation links
+<nav>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+</nav>
+9️⃣ <main>
+📌 Use: Main content of webpage
+<main>
+  <h2>Main Content</h2>
+</main>
+🔟 <ul>, <ol>, <li> – Lists
+📌 Use: Listing items
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+</ul>
+1️⃣1️⃣ <table>
+📌 Use: Tabular data
+<table border="1">
+  <tr><th>Name</th><th>Age</th></tr>
+  <tr><td>Aatif</td><td>22</td></tr>
+</table>
+1️⃣2️⃣ <form>
+📌 Use: Collect user input
+<form>
+  <input type="text" placeholder="Name">
+  <button>Submit</button>
+</form>
+1️⃣3️⃣ <hr>
+📌 Use: Horizontal line
+<hr>
+1️⃣4️⃣ <pre>
+📌 Use: Preformatted text
+<pre>
+Hello   World
+    HTML
+</pre>
+1️⃣5️⃣ <aside>
+📌 Use: Side content / sidebar
+<aside>
+  <p>Ads or links</p>
+</aside>
+🧩 INLINE ELEMENTS
+🔸 Definition
+An inline element:
+Does NOT start on new line
+Takes only required width
+Used inside text/content
+📌 Use case: Styling text, links, icons
+🔹 Common Inline Elements (Explained)
+1️⃣ <span>
+📌 Use: Inline container for text styling
+<p>Hello <span style="color:red;">World</span></p>
+🧠 Hinglish:
+<span> text ke chhote part ko style karne ke kaam aata hai.
+2️⃣ <a> – Anchor (Link)
+📌 Use: Create hyperlinks
+<a href="https://youtube.com">YouTube</a>
+3️⃣ <b> & <strong>
+📌 Use: Bold text
+📌 <strong> = importance
+<b>Bold</b>
+<strong>Important</strong>
+4️⃣ <i> & <em>
+📌 Use: Italic / emphasis
+<i>Italic</i>
+<em>Emphasized</em>
+5️⃣ <img>
+📌 Use: Display image
+<img src="image.jpg" width="200">
+6️⃣ <input>
+📌 Use: User input
+<input type="text">
+7️⃣ <label>
+📌 Use: Input label
+<label>Name:</label>
+<input type="text">
+8️⃣ <sub> & <sup>
+📌 Use: Subscript & Superscript
+H<sub>2</sub>O  
+x<sup>2</sup>
+9️⃣ <small>
+📌 Use: Small text
+<small>Terms & Conditions</small>
+🔟 <br>
+📌 Use: Line break
+Hello<br>World
+⚠️ Important Note
+Some elements can be changed using CSS
+span {
+  display: block;
+}
+👉 Inline element block ban sakta hai & vice-versa.

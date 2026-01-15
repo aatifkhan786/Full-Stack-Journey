@@ -1,0 +1,186 @@
+📘 HTML Block & Inline Elements
+(ONLY MISSED TAGS – COMPLETE DETAILED NOTES)
+🧱 PART 1: MISSED BLOCK-LEVEL ELEMENTS
+1️⃣ <address>
+🔹 What it is
+Represents contact information of author / owner.
+🔹 Why used
+Author details
+Email, phone, website
+Footer me mostly use hota hai
+🔹 Hinglish
+<address> contact info ke liye hota hai, normal paragraph nahi.
+🔹 Example
+<address>
+  Written by Aatif Khan<br>
+  Email: aatif@gmail.com<br>
+  Delhi, India
+</address>
+2️⃣ <blockquote>
+🔹 What it is
+Used for long quotations.
+🔹 Why used
+Quotes from books, articles
+Indentation automatically aata hai
+🔹 Hinglish
+Jab quotation lamba ho tab <blockquote> use karte hain.
+🔹 Example
+<blockquote>
+  Learning never exhausts the mind.
+</blockquote>
+3️⃣ <dl>, <dt>, <dd> (Description List)
+🔹 What they are
+Used for term + description list.
+🔹 Why used
+Dictionary
+FAQ
+Definitions
+🔹 Hinglish
+<dt> term hota hai, <dd> uski explanation.
+🔹 Example
+<dl>
+  <dt>HTML</dt>
+  <dd>Markup language for web</dd>
+  <dt>CSS</dt>
+  <dd>Used for styling</dd>
+</dl>
+4️⃣ <canvas>
+🔹 What it is
+Used to draw graphics using JavaScript.
+🔹 Why used
+Games
+Charts
+Animations
+🔹 Hinglish
+Canvas ek drawing board hai JS ke liye.
+🔹 Example
+<canvas id="box" width="200" height="100" style="border:1px solid black;">
+</canvas>
+5️⃣ <noscript>
+🔹 What it is
+Shown when JavaScript disabled ho.
+🔹 Why used
+JS fallback message
+User warning
+🔹 Example
+<noscript>
+  JavaScript is disabled in your browser.
+</noscript>
+6️⃣ <tfoot>
+🔹 What it is
+Footer section of a table.
+🔹 Why used
+Summary row
+Total calculation
+🔹 Example
+<table border="1">
+  <tfoot>
+    <tr>
+      <td>Total</td>
+      <td>500</td>
+    </tr>
+  </tfoot>
+</table>
+7️⃣ <video>
+🔹 What it is
+Used to embed videos.
+🔹 Why used
+Tutorials
+Media content
+🔹 Example
+<video controls width="300">
+  <source src="video.mp4" type="video/mp4">
+</video>
+8️⃣ <figure> & <figcaption>
+🔹 What they are
+Used for media + caption.
+🔹 Why used
+Images with description
+Semantic meaning
+🔹 Example
+<figure>
+  <img src="image.jpg" width="200">
+  <figcaption>HTML Logo</figcaption>
+</figure>
+9️⃣ <fieldset>
+🔹 What it is
+Groups form elements.
+🔹 Why used
+Form sections
+Better UX
+🔹 Example
+<form>
+  <fieldset>
+    <legend>User Info</legend>
+    Name: <input type="text">
+  </fieldset>
+</form>
+🧩 PART 2: MISSED INLINE ELEMENTS
+🔟 <button>
+Clickable button.
+<button>Click Me</button>
+1️⃣1️⃣ <time>
+Represents date/time.
+<time datetime="2026-01-15">15 Jan 2026</time>
+1️⃣2️⃣ <tt> (Obsolete)
+Teletype text (monospace).
+<tt>Code Style Text</tt>
+1️⃣3️⃣ <var>
+Variable representation.
+<p><var>x</var> = 10</p>
+1️⃣4️⃣ <abbr>
+Abbreviation with full form.
+<abbr title="HyperText Markup Language">HTML</abbr>
+1️⃣5️⃣ <acronym> (Obsolete)
+Same as <abbr>.
+<acronym title="World Health Organization">WHO</acronym>
+1️⃣6️⃣ <cite>
+Citation of work.
+<cite>GeeksforGeeks</cite>
+1️⃣7️⃣ <code>
+Code snippet.
+<code>console.log("Hello");</code>
+1️⃣8️⃣ <dfn>
+Defines a term.
+<dfn>HTML</dfn> is a markup language.
+1️⃣9️⃣ <output>
+Shows result.
+<output>Result: 10</output>
+2️⃣0️⃣ <q>
+Short quotation.
+<q>Practice makes perfect</q>
+2️⃣1️⃣ <samp>
+Sample output.
+<samp>Error 404</samp>
+2️⃣2️⃣ <script>
+JavaScript code.
+<script>
+  alert("Hello");
+</script>
+2️⃣3️⃣ <select>
+Dropdown list.
+<select>
+  <option>HTML</option>
+  <option>CSS</option>
+</select>
+2️⃣4️⃣ <textarea>
+Multi-line input.
+<textarea rows="4"></textarea>
+2️⃣5️⃣ <bdo>
+Text direction.
+<bdo dir="rtl">Hello</bdo>
+2️⃣6️⃣ <big> (Obsolete)
+Bigger text.
+<big>Large Text</big>
+2️⃣7️⃣ <kbd>
+Keyboard input.
+<kbd>Ctrl + C</kbd>
+2️⃣8️⃣ <map>
+Image mapping.
+<img src="img.jpg" usemap="#map1">
+<map name="map1">
+  <area shape="rect" coords="0,0,50,50" href="#">
+</map>
+2️⃣9️⃣ <object>
+Embed external resource.
+<object data="file.pdf" width="300"></object>
