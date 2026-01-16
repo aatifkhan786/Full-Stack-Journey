@@ -1,0 +1,134 @@
+HTML Tags - A to Z List
+
+comments
+HTML tags are the building blocks of web pages, used to structure and format content. They guide browsers on how to display text, images, links, and other media.
+
+HTML tags, enclosed in < >, usually come in opening and closing pairs.
+Opening tags start elements; closing tags end them (/).
+Some tags, like <img> and <br>, are self-closing.
+Essential tags include <!DOCTYPE html>, <html>, <head>, and <body>.
+/////
+| Tags          | Description                                                  | Syntax                                      |   |      |
+| ------------- | ------------------------------------------------------------ | ------------------------------------------- | - | ---- |
+| !DOCTYPE html | Declares the document type and HTML version.                 | `<!DOCTYPE html>`                           |   |      |
+| abbreviation  | Defines an abbreviation or acronym with a tooltip.           | `<abbr title=" "> ... </abbr>`              |   |      |
+| acronym       | Defines an acronym with extra semantic meaning. (Deprecated) | `<acronym title=" "> ... </acronym>`        |   |      |
+| address       | Specifies contact information for a person or organization.  | `<address> ... </address>`                  |   |      |
+| anchor        | Creates a hyperlink to another page or location.             | `<a href=" "> ...</a>`                      |   |      |
+| applet        | Embeds a Java applet. (Deprecated, use `<object>`)           | `<applet>....</applet>`                     |   |      |
+| area          | Defines a clickable area inside an image map.                | `<area>`                                    |   |      |
+| article       | Represents a self-contained content section.                 | `<article>..</article>`                     |   |      |
+| aside         | Defines content aside from the main content.                 | `<aside>..</aside>`                         |   |      |
+| audio         | Embeds audio content like music or podcasts.                 | `<audio>..</audio>`                         |   |      |
+| base          | Sets a base URL for relative links.                          | `<base href=" ">`                           |   |      |
+| basefont      | Sets default font for the page. (Deprecated)                 | `<basefont>`                                |   |      |
+| bdi           | Isolates text direction from surrounding content.            | `<bdi> ... </bdi>`                          |   |      |
+| bdo           | Overrides the current text direction explicitly.             | `<bdo dir> Contents... </bdo>`              |   |      |
+| bgsound       | Plays background sound. (Deprecated)                         | `<bgsound src="">`                          |   |      |
+| big           | Increases text size slightly. (Deprecated in HTML5)          | `<big> Contents... </big>`                  |   |      |
+| blockquote    | Displays long quotations from other sources.                 | `<blockquote> Contents... </blockquote>`    |   |      |
+| body          | Defines the main content of the HTML page.                   | `<body> Contents... </body>`                |   |      |
+| bold          | Makes text bold without extra importance.                    | `<b>... </b>`                               |   |      |
+| break         | Inserts a line break.                                        | `<br>`                                      |   |      |
+| button        | Defines a clickable button.                                  | `<button type="button">`                    |   |      |
+| caption       | Specifies a table’s caption.                                 | `<caption align="value"></caption>`         |   |      |
+| canvas        | Defines a drawable area for graphics and animations.         | `<canvas id="script"> Contents</canvas>`    |   |      |
+| center        | Centers content horizontally. (Deprecated)                   | `<center> Contents.</center>`               |   |      |
+| cite          | Marks the title of a work, displayed in italics.             | `<cite>Content</cite>`                      |   |      |
+| code          | Represents computer code text.                               | `<code>Contents</code>`                     |   |      |
+| colgroup      | Groups columns in a table for styling.                       | `<colgroup> Column lists </colgroup>`       |   |      |
+| column        | Sets properties for columns within a colgroup.               | `<col attribute="value">`                   |   |      |
+| comment       | Inserts a comment in the HTML code.                          | `<!-- … -->`                                |   |      |
+| data          | Associates content with a machine-readable value.            | `<data value=""> Contents </data>`          |   |      |
+| datalist      | Provides autocomplete options for input elements.            | `<datalist>Contents</datalist>`             |   |      |
+| dd            | Defines a description in a description list.                 | `<dd>Contents</dd>`                         |   |      |
+| define        | Marks the defining instance of a term.                       | `<dfn>Contents</dfn>`                       |   |      |
+| delete        | Marks deleted text.                                          | `<del>Contents</del>`                       |   |      |
+| details       | Creates an expandable/collapsible section.                   | `<details>Contents</details>`               |   |      |
+| dialog        | Defines a popup dialog box.                                  | `<dialog open> Contents... </dialog>`       |   |      |
+| dir           | Creates a directory list. (Deprecated)                       | `<dir> Lists... </dir>`                     |   |      |
+| div           | Groups content into a division or section.                   | `<div>Content</div>`                        |   |      |
+| dl            | Represents a description list.                               | `<dl> Contents... </dl>`                    |   |      |
+| dt            | Represents a term/name in a description list.                | `<dt> Content... </dt>`                     |   |      |
+| embed         | Embeds external multimedia content like Flash.               | `<embed attributes>`                        |   |      |
+| fieldset      | Groups related form elements together.                       | `<fieldset>Contents</fieldset>`             |   |      |
+| figcaption    | Adds caption to a figure.                                    | `<figcaption> Figure caption </figcaption>` |   |      |
+| figure        | Represents self-contained content, like images.              | `<figure> Image content... </figure>`       |   |      |
+| font          | Sets font, size, and color. (Deprecated)                     | `<font attribute="value"> Content </font>`  |   |      |
+| footer        | Defines footer content for a document/section.               | `<footer> ... </footer>`                    |   |      |
+| form          | Represents a web form for user input.                        | `<form> Form Content... </form>`            |   |      |
+| frame         | Defines a browser window frame. (Deprecated)                 | `<frame/>`                                  |   |      |
+| frameset      | Groups frames in a window. (Deprecated)                      | `<frameset cols="pixels                     | % | *">` |
+| head          | Contains metadata and links for the document.                | `<head>...</head>`                          |   |      |
+| header        | Represents introductory content or a heading section.        | `<header> ...</header>`                     |   |      |
+| heading       | Defines headings from h1 to h6.                              | `<h1>Heading1</h1>`                         |   |      |
+| hgroup        | Groups multiple headings. (Deprecated)                       | `<hgroup> ... </hgroup>`                    |   |      |
+| hr            | Inserts a horizontal line.                                   | `<hr>`                                      |   |      |
+| html          | Defines the root element of the HTML page.                   | `<html> Contents </html>`                   |   |      |
+| iframe        | Embeds another HTML document in a frame.                     | `<iframe src="URL"></iframe>`               |   |      |
+| image         | Displays an image.                                           | `<img src="url" alt="">`                    |   |      |
+| input         | Creates input controls in a form.                            | `<input type="value" />`                    |   |      |
+| ins           | Marks inserted text.                                         | `<ins> Contents... </ins>`                  |   |      |
+| isindex       | Creates a single-line text query. (Deprecated)               | `<isindex prompt="search">`                 |   |      |
+| italic        | Italicizes text.                                             | `<i> Contents</i>`                          |   |      |
+| kbd           | Marks keyboard input.                                        | `<kbd> text </kbd>`                         |   |      |
+| keygen        | Generates key-pair for forms. (Deprecated)                   | `<keygen name="name">`                      |   |      |
+| label         | Provides label for form input.                               | `<label> form content </label>`             |   |      |
+| legend        | Titles a fieldset element.                                   | `<legend> Text </legend>`                   |   |      |
+| link          | Links external resources.                                    | `<link rel="stylesheet" href="styles.css">` |   |      |
+| list          | Represents an item in a list.                                | `<li> List Items </li>`                     |   |      |
+| main          | Marks the main content of the page.                          | `<main>Contents</main>`                     |   |      |
+| mark          | Highlights text.                                             | `<mark> Contents... </mark>`                |   |      |
+| marquee       | Scrolls text/images. (Deprecated)                            | `<marquee>Contents</marquee>`               |   |      |
+| menuitem      | Defines a menu command. (Deprecated)                         | `<menuitem></menuitem>`                     |   |      |
+| meta          | Stores metadata about document.                              | `<meta attribute-name="value">`             |   |      |
+| meter         | Displays a scalar measurement.                               | `<meter> </meter>`                          |   |      |
+| nav           | Represents navigation links.                                 | `<nav> Links... </nav>`                     |   |      |
+| nobreak       | Prevents line breaks. (Deprecated)                           | `<nobr> Statement </nobr>`                  |   |      |
+| noembed       | Alternative content for embed.                               | `<noembed> Element </noembed>`              |   |      |
+| noscript      | Displays content when scripts disabled.                      | `<noscript> Contents... </noscript>`        |   |      |
+| object        | Embeds multimedia content.                                   | `<object>...</object>`                      |   |      |
+| optgroup      | Groups dropdown options.                                     | `<optgroup>...</optgroup>`                  |   |      |
+| option        | Defines dropdown option.                                     | `<option> Contents... </option>`            |   |      |
+| output        | Displays calculation results.                                | `<output> Results... </output>`             |   |      |
+| paragraphs    | Represents a paragraph.                                      | `<p> Content </p>`                          |   |      |
+| param         | Defines parameters for object.                               | `<param name="" value="">`                  |   |      |
+| phrase        | Marks emphasized text.                                       | `<em> Text Content </em>`                   |   |      |
+| pre           | Displays preformatted text.                                  | `<pre> Contents... </pre>`                  |   |      |
+| progress      | Represents task progress.                                    | `<progress> </progress>`                    |   |      |
+| q             | Represents a short quotation.                                | `<q> Contents... </q>`                      |   |      |
+| rp            | Provides parentheses for ruby.                               | `<rp> </rp>`                                |   |      |
+| rt            | Ruby annotation text.                                        | `<rt> Explanation </rt>`                    |   |      |
+| ruby          | Ruby annotations.                                            | `<ruby> Contents </ruby>`                   |   |      |
+| s             | Marks text no longer correct.                                | `<s> Contents </s>`                         |   |      |
+| samp          | Represents sample output.                                    | `<samp> Contents </samp>`                   |   |      |
+| script        | Embeds JavaScript.                                           | `<script> </script>`                        |   |      |
+| section       | Represents a standalone section.                             | `<section> </section>`                      |   |      |
+| small         | Reduces font size.                                           | `<small> </small>`                          |   |      |
+| source        | Defines media source.                                        | `<source src="" type="">`                   |   |      |
+| spacer        | Creates empty space. (Deprecated)                            | `<spacer>`                                  |   |      |
+| span          | Generic inline container.                                    | `<span>Some Text</span>`                    |   |      |
+| strike        | Strikethrough text. (Deprecated)                             | `<strike> </strike>`                        |   |      |
+| strong        | Marks important text.                                        | `<strong> </strong>`                        |   |      |
+| style         | Adds CSS styling.                                            | `<style>`                                   |   |      |
+| sub           | Adds subscript text.                                         | `<sub>subscript</sub>`                      |   |      |
+| sup           | Adds superscript text.                                       | `<sup>superscript</sup>`                    |   |      |
+| summary       | Summary for details element.                                 | `<summary> </summary>`                      |   |      |
+| svg           | Scalable Vector Graphics.                                    | `<svg></svg>`                               |   |      |
+| table         | Represents tabular data.                                     | `<table></table>`                           |   |      |
+| tbody         | Groups table body rows.                                      | `<tbody></tbody>`                           |   |      |
+| td            | Table data cell.                                             | `<td></td>`                                 |   |      |
+| template      | Stores reusable HTML fragments.                              | `<template></template>`                     |   |      |
+| tfoot         | Table footer.                                                | `<tfoot></tfoot>`                           |   |      |
+| th            | Table header cell.                                           | `<th></th>`                                 |   |      |
+| thead         | Groups table header rows.                                    | `<thead></thead>`                           |   |      |
+| time          | Represents date/time.                                        | `<time></time>`                             |   |      |
+| title         | Sets document title.                                         | `<title> </title>`                          |   |      |
+| tr            | Table row.                                                   | `<tr></tr>`                                 |   |      |
+| track         | Text tracks for media.                                       | `<track>`                                   |   |      |
+| tt            | Teletype text. (Deprecated)                                  | `<tt> </tt>`                                |   |      |
+| underline     | Underlines text.                                             | `<u> </u>`                                  |   |      |
+| var           | Represents a variable.                                       | `<var> </var>`                              |   |      |
+| video         | Embeds video content.                                        | `<video controls></video>`                  |   |      |
+| wbr           | Suggests line break opportunity.                             | `<wbr>`                                     |   |      |
+| xmp           | Displays preformatted text literally. (Deprecated)           | `<xmp> statement </xmp>`                    |   |      |
