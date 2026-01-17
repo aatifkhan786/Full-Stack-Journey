@@ -1,0 +1,217 @@
+==============================
+HTML ENTITIES – COMPLETE NOTES
+(English + Hinglish)
+==============================
+
+HTML Entities are special codes used to display reserved characters, symbols, or invisible spaces in a webpage that cannot be typed directly or have special meanings in HTML (like <, >, or &).
+
+HTML ENTITIES KYA HOTI HAIN?
+HTML Entities special codes hote hain jo un characters ko display karne ke kaam aate hain:
+- jo HTML me reserved hote hain
+- jo keyboard se directly type nahi hote
+- ya jisse HTML code confuse ho sakta hai
+
+WHY HTML ENTITIES ARE USED
+- Reserved characters display karne ke liye
+- HTML errors aur misinterpretation se bachne ke liye
+- Symbols, currency, math signs dikhane ke liye
+- Extra space (non-breaking space) ke liye
+- Web content ko readable aur properly formatted banane ke liye
+
+BASIC RULES OF HTML ENTITIES
+- Hamesha & se start hoti hain
+- Hamesha ; par end hoti hain
+
+Examples:
+&lt;   means <
+&gt;   means >
+&amp;  means &
+
+--------------------------------------------------
+
+SIMPLE HTML ENTITIES EXAMPLE
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Entities Example</title>
+</head>
+<body>
+  <h2>Using HTML Entities</h2>
+  <p>Less than symbol: &lt;</p>
+  <p>Greater than symbol: &gt;</p>
+  <p>Ampersand symbol: &amp;</p>
+  <p>Copyright symbol: &copy; 2025 MyWebsite</p>
+  <p>Registered symbol: &reg; Trademark</p>
+  <p>Non-breaking space example: Hello&nbsp;World</p>
+</body>
+</html>
+
+--------------------------------------------------
+
+COMMONLY USED HTML ENTITIES
+
+Symbol | Description | Entity Name | Entity Number
+-------------------------------------------------
+(space) | non-breaking space | &nbsp; | &#160;
+< | less than | &lt; | &#60;
+> | greater than | &gt; | &#62;
+& | ampersand | &amp; | &#38;
+" | double quotation mark | &quot; | &#34;
+© | copyright | &copy; | &#169;
+® | registered trademark | &reg; | &#174;
+€ | euro | &euro; | &#8364;
+¥ | yen | &yen; | &#165;
+£ | pound | &pound; | &#163;
+¢ | cent | &cent; | &#162;
+™ | trademark | &trade; | &#8482;
+° | degree | &deg; | &#176;
+∞ | infinity | &infin; | &#8734;
+± | plus-minus | &plusmn; | &#177;
+∑ | summation | &sum; | &#8721;
+∏ | product | &prod; | &#8719;
+∈ | element of | &isin; | &#8712;
+∉ | not element of | &notin; | &#8713;
+∂ | partial differential | &part; | &#8706;
+∃ | there exists | &exist; | &#8707;
+∅ | empty set | &empty; | &#8709;
+∇ | nabla | &nabla; | &#8711;
+♥ | black heart suit | &hearts; | &#9829;
+♣ | black club suit | &clubs; | &#9827;
+♠ | black spade suit | &spades; | &#9824;
+♦ | black diamond suit | &diams; | &#9830;
+↓ | downwards arrow | &darr; | &#8595;
+↑ | upwards arrow | &uarr; | &#8593;
+← | leftwards arrow | &larr; | &#8592;
+→ | rightwards arrow | &rarr; | &#8594;
+
+--------------------------------------------------
+
+CURRENCY SYMBOLS EXAMPLE
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Currency Symbols</title>
+</head>
+<body>
+  <h2>Currency Symbols Using HTML Entities</h2>
+  <ul>
+    <li>Dollar: &#36;</li>
+    <li>Euro: &#8364;</li>
+    <li>Pound: &#163;</li>
+    <li>Yen: &#165;</li>
+    <li>Rupee: &#8377;</li>
+    <li>Won: &#8361;</li>
+    <li>Franco: &#8355;</li>
+    <li>Bitcoin: &#8383;</li>
+  </ul>
+</body>
+</html>
+
+--------------------------------------------------
+
+RESERVED CHARACTERS
+
+Character | Entity Name
+----------------------
+& | &amp;
+< | &lt;
+> | &gt;
+" | &quot;
+
+Ye characters HTML ke liye reserved hote hain,
+isliye direct use karne par code break ho sakta hai.
+
+--------------------------------------------------
+
+OTHER CHARACTERS (KEYBOARD PAR NAHI MILTE)
+
+- In characters ke liye entity name ya entity number use hota hai
+- #x ka matlab hexadecimal value hota hai
+
+Character | Entity
+------------------
+≥ | &GreaterEqual;
+© | &copy;
+€ | &euro;
+∃ | &exist;
+
+--------------------------------------------------
+
+SPECIAL CHARACTERS EXAMPLE
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Entities</title>
+</head>
+<body>
+  <p>Showing euro &euro;</p>
+  <p>Showing cent &cent;</p>
+  <p>Showing Copyright &copy;</p>
+  <p>Showing BLACK DIAMOND SUIT &diams;</p>
+  <p>Showing TRADEMARK &trade;</p>
+</body>
+</html>
+
+--------------------------------------------------
+
+NON-BREAKING SPACE (&nbsp;)
+
+- Line break hone se rokta hai
+- Browser extra spaces hata deta hai, isliye real space ke liye use hota hai
+
+Examples:
+Hello&nbsp;World
+12:00&nbsp;PM
+256&nbsp;km/h
+
+--------------------------------------------------
+
+NON-BREAKING HYPHEN
+- Normal hyphen line break kar deta hai
+- Non-breaking hyphen line break nahi hone deta
+
+--------------------------------------------------
+
+COMBINING DIACRITICAL MARKS
+
+Diacritical marks symbols hote hain jo letters ke upar,
+neeche ya andar lagkar new characters banate hain.
+
+Examples:
+
+Mark | Character | HTML Code | Result
+------------------------------------
+̀ | a | a&#768; | à
+́ | a | a&#769; | á
+̂ | a | a&#770; | â
+̃ | a | a&#771; | ã
+̀ | O | O&#768; | Ò
+́ | O | O&#769; | Ó
+̂ | O | O&#770; | Ô
+̃ | O | O&#771; | Õ
+
+--------------------------------------------------
+
+BEST PRACTICES FOR HTML ENTITIES
+
+- Named entities use karo (&lt; instead of &#60;)
+- Entity codes verify karo
+- Reserved characters ke liye entities hi use karo
+- Charset issues se bachne ke liye entities ka use karo
+
+--------------------------------------------------
+
+MEMORY TRICK (KABHI NAHI BHULOGE)
+
+- < > & = problem
+- Solution = HTML Entities
+- Rule = & start, ; end
+- Space = &nbsp;
+- Symbols = entity name / number
+
+==============================
+END OF HTML ENTITIES NOTES
+==============================
