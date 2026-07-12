@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue Lightning Glow</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: radial-gradient(circle at center, #009dff 0%, #004d99 70%, #002244 100%);
+      overflow: hidden;
+    }
+
+    /* Center lightning glow */
+    .lightning-center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 700px;
+      height: 700px;
+      background: radial-gradient(
+        circle,
+        rgba(0, 220, 255, 1) 10%,
+        rgba(0, 180, 255, 0.9) 30%,
+        rgba(0, 140, 255, 0.7) 55%,
+        rgba(0, 100, 220, 0.5) 75%,
+        transparent 90%
+      );
+      filter: blur(90px);
+      border-radius: 50%;
+      animation: pulse 3s infinite ease-in-out;
+    }
+
+    /* Stronger corner glows */
+    .corner {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(
+        circle,
+        rgba(0, 180, 255, 0.6) 20%,
+        rgba(0, 150, 255, 0.4) 50%,
+        rgba(0, 120, 255, 0.25) 70%,
+        transparent 90%
+      );
+      filter: blur(200px);
+      border-radius: 50%;
+    }
+
+    .corner.tl { top: -150px; left: -150px; }
+    .corner.tr { top: -150px; right: -150px; }
+    .corner.bl { bottom: -150px; left: -150px; }
+    .corner.br { bottom: -150px; right: -150px; }
+
+    /* Center pulsing glow effect */
+    @keyframes pulse {
+      0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+      50% { transform: translate(-50%, -50%) scale(1.3); opacity: 0.95; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Corner Glows -->
+  <div class="corner tl"></div>
+  <div class="corner tr"></div>
+  <div class="corner bl"></div>
+  <div class="corner br"></div>
+
+  <!-- Main Lightning Glow -->
+  <div class="lightning-center"></div>
+</body>
+</html>

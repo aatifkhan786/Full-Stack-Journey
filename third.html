@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ne Zha Fire Background</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Flicker animation for fire aura */
+    @keyframes fireFlicker {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 0.9; }
+    }
+
+    /* Sparks animation */
+    @keyframes sparks {
+      0% { transform: translateY(100vh) scale(0.5); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+    }
+
+    .spark {
+      position: absolute;
+      bottom: 0;
+      width: 3px;
+      height: 15px;
+      background: linear-gradient(to top, #FF4500, #FFD700);
+      animation: sparks 3s linear infinite;
+    }
+  </style>
+</head>
+<body class="m-0 p-0">
+  <div class="min-h-screen w-full relative overflow-hidden bg-black">
+
+    <!-- Dark red to black gradient base -->
+    <div class="absolute inset-0 bg-gradient-to-b from-[#2B0000] via-[#4A0D0D] to-black"></div>
+
+    <!-- Fiery glow aura -->
+    <div class="absolute inset-0 bg-gradient-to-r from-[#FF2D00] via-[#FF5E0E] to-[#FFD966] 
+                opacity-70 blur-3xl" 
+         style="animation: fireFlicker 2s infinite ease-in-out;"></div>
+
+    <!-- Sparks (random particles) -->
+    <div class="spark" style="left:20%; animation-delay:0s;"></div>
+    <div class="spark" style="left:40%; animation-delay:1s;"></div>
+    <div class="spark" style="left:60%; animation-delay:2s;"></div>
+    <div class="spark" style="left:80%; animation-delay:1.5s;"></div>
+    <div class="spark" style="left:30%; animation-delay:2.5s;"></div>
+
+  </div>
+</body>
+</html>
