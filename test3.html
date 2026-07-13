@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur Code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    
+</body>
+<script>
+    function addList(newList){
+        const li = document.createElement('li');
+        li.innerHTML = `${newList}`;
+        document.querySelector('.language').appendChild(li);
+
+    }
+    addList("Python");
+    addList("Cpp")
+    function addOptiLanguage(newLang){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(newLang))
+        document.querySelector('.language').appendChild(li);
+    }
+    addOptiLanguage("Golang")
+    //Edit
+    const secondLang= document.querySelector("li:nth-child(2)");
+    const newli = document.createElement('li');
+    newli.textContent ="JAVA";
+    secondLang.replaceWith(newli)
+    //remove
+    const removeLang = document.querySelector("li:last-child")
+    removeLang.remove()
+
+</script>
+</html>
