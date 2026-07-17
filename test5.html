@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="learn">
+        <h1>Kaa haal <b>baa</b></h1><span style="display: none;"> <p>thik <b>baa</b></p></span>
+    </div>
+</body>
+<script>
+    const learn = document.querySelector("#learn");
+
+    console.log(learn.innerHTML);
+    // learn.innerHTML = "<h1>chup</h1>"
+    console.log(learn.innerText)
+    // learn.innerText = "<p>ok</p>"
+    console.log(learn.textContent)
+    learn.textContent = "<p>ok</p>"
+</script>
+</html>
