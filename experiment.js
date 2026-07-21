@@ -198,5 +198,22 @@
 // obj2.a=100;
 // console.log(obj);
 // console.log(obj2);
-const a= alert('hello');
-console.log(a);
+
+// const a=[1,2,3,4,5];
+// // console.log(a);
+// const b=a;
+// b[0]=55;
+// // a[0]=11;
+// console.log(a);
+
+// console.log(b);
+
+// // let a;
+let arr = [1, 2, 3,[4,5,6]];
+let arr1=[7,9,10]
+let copy = [arr[0],arr[1],arr[2],...arr[3],...arr1];
+console.log(copy);
+
+let user = { name: "Aatif",age:18,state:"Bihar" };
+let userCopy = { ...user };
+console.log(userCopy);

@@ -1,0 +1,74 @@
+<!-- // HTML:
+// <img id="owl" src="owl.jpg" alt="owl">
+
+// ============================================================
+// APPROACH 1 — Directly HTML mein (AVOID)
+// ============================================================
+// <img onclick="alert('owl')">
+// Yeh approach buri hai — HTML aur JS mix ho rahe hain
+// Separation of concerns toot jaati hai
+
+// ============================================================
+// APPROACH 2 — JS mein property set karo (Better but limited)
+// ============================================================
+const owl = document.getElementById("owl");
+owl.onclick = function() {
+    alert("owl clicked");
+};
+// Problem: Sirf EK handler attach ho sakta hai
+// Agar dobara owl.onclick = ... karo toh pehla overwrite ho jaata hai
+
+// ============================================================
+// APPROACH 3 — addEventListener() — BEST WAY — Hamesha yahi use karo
+// ============================================================
+owl.addEventListener("click", function(e) {
+    console.log("owl clicked");
+}, false);
+// 3rd argument: false = bubbling (default), true = capturing -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="img">
+      <li id="cat"><img src="cat.jpg" /></li>
+      <li id="dog"><img src="images.jpg" /></li>
+      <li id="dog"><img src="images.jpg" /></li>
+      <li id="cat"><img src="cat.jpg" /></li>
+    </ul>
+  </body>
+  <script>
+    // document.querySelector('#img').addEventListener("click", function(e){
+    //     console.log("ul cliked");
+    // })
+    // document.querySelector('#cat').addEventListener("click", function(e){
+    //     console.log("cat cliked");
+    //     e.stopPropagation();
+    // })
+    // document.querySelector('#dog').addEventListener("click", function(e){
+    //     console.log("dog cliked");
+    // })
+    // document.querySelector("#img").addEventListener("click", function(e){
+    //     // console.log(e.target);
+    //     // console.log(e.target.tagName);
+    //     // if(e.target.tagName==="IMG"){
+    //     //     document.body.style.backgroundColor='red';
+    //     // }
+    //     let li=e.target.parentNode;
+
+    //     li.remove();
+
+    // })
+    function removeImage(e) {
+      let li = e.target.parentNode;
+      li.remove();
+    }
+
+    document.querySelector("#img").addEventListener("click", removeImage);
+    // document.querySelector("#img").removeEventListener("click", removeImage);
+  </script>
+</html>
