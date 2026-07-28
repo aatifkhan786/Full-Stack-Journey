@@ -209,11 +209,13 @@
 // console.log(b);
 
 // // let a;
-let arr = [1, 2, 3,[4,5,6]];
-let arr1=[7,9,10]
-let copy = [arr[0],arr[1],arr[2],...arr[3],...arr1];
-console.log(copy);
+// let arr = [1, 2, 3,[4,5,6]];
+// let arr1=[7,9,10]
+// let copy = [arr[0],arr[1],arr[2],...arr[3],...arr1];
+// console.log(copy);
 
-let user = { name: "Aatif",age:18,state:"Bihar" };
-let userCopy = { ...user };
-console.log(userCopy);
+// let user = { name: "Aatif",age:18,state:"Bihar" };
+// let userCopy = { ...user };
+// console.log(userCopy);
+let a=undefined;
+console.log(typeof a)

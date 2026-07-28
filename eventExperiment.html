@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegations</title>
+</head>
+<body>
+    <ul id="images">
+        <li id="cat">
+            <img src="cat.jpg">
+        </li>
+        <li id="dog">
+            <img src="images.jpg">
+        </li>
+    </ul>
+</body>
+<script>
+    const parent = document.querySelectorAll("#images li");
+
+    parent.forEach((img) => {
+        img.addEventListener("click", function (e) {
+            // console.log(e.target.id);
+            let li=e.target.parentNode;
+            // console.log(li);
+            li.remove();
+        });
+    });
+    // console.log(1);
+    // setTimeout(function(){
+    //     console.log("Prashant Bhadwa");
+        
+    // },0);
+    // console.log(2);
+    
+    
+</script>
+</html>

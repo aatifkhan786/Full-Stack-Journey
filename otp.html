@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="cancel">Cancel</button>
+  </body>
+  <script>
+    function sendOTP() {
+      let storeOTP = Math.floor(Math.random() * 100000)+10000;
+      console.log("OTP :", storeOTP);
+    }
+
+    // const otp = setTimeout(function () {
+    //   sendOTP();
+    // }, 5000);
+    const otp = setInterval(function () {
+      sendOTP();
+    }, 5000);
+    document.getElementById("cancel").addEventListener("click", function () {
+      clearInterval(otp);
+      console.log("OTP request cancelled");
+    });
+  </script>
+</html>
